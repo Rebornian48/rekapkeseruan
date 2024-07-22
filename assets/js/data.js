@@ -1,8 +1,7 @@
 new Chart(document.getElementById("myChart"), {
   type: "bar",
   data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
-    //, "July", "August", "September", "October", "November", "December"
+    labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
     datasets: [
       {
         label: "Pekan 1",
