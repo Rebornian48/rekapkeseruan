@@ -39,8 +39,8 @@
       rel="stylesheet"
       type="text/css"
     />
-
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/data.js"></script>
   </head>
   <body>
     <div class="bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
@@ -55,22 +55,20 @@
           >
         </p>
       </div>
-      <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
+        <canvas id="myChart"></canvas>
+
+      <!-- <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
         <h2 class="text-2xl font-bold leading-10 tracking-tight text-white">
           2023
         </h2>
         <div class="mt-20">
-          <dl
-            class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10"
-          >
+          <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
             <div>
               <dt class="text-base font-semibold leading-7 text-white">
                 Januari
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -79,9 +77,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -90,9 +86,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -101,9 +95,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -119,9 +111,7 @@
                 Februari
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -130,9 +120,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -141,9 +129,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -152,9 +138,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -170,9 +154,7 @@
                 Maret
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -181,9 +163,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -192,9 +172,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -203,9 +181,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -221,9 +197,7 @@
                 April
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -232,9 +206,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -243,9 +215,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -254,9 +224,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -270,9 +238,7 @@
             <div>
               <dt class="text-base font-semibold leading-7 text-white">Mei</dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -281,9 +247,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -292,9 +256,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -303,9 +265,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -319,9 +279,7 @@
             <div>
               <dt class="text-base font-semibold leading-7 text-white">Juni</dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -330,9 +288,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -341,9 +297,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -352,9 +306,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -368,9 +320,7 @@
             <div>
               <dt class="text-base font-semibold leading-7 text-white">Juli</dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -379,9 +329,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -390,9 +338,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -401,9 +347,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -419,9 +363,7 @@
                 Agustus
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -430,9 +372,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -441,9 +381,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -452,9 +390,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -470,9 +406,7 @@
                 September
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -481,9 +415,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -492,9 +424,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -503,9 +433,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -521,9 +449,7 @@
                 Oktober
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -532,9 +458,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -543,9 +467,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -554,9 +476,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -572,9 +492,7 @@
                 November
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -583,9 +501,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -594,9 +510,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -605,9 +519,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -623,9 +535,7 @@
                 Desember
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -634,9 +544,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -645,9 +553,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -656,9 +562,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -677,17 +581,13 @@
           2024
         </h2>
         <div class="mt-20">
-          <dl
-            class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10"
-          >
+          <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
             <div>
               <dt class="text-base font-semibold leading-7 text-white">
                 Januari
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -696,9 +596,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -707,9 +605,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -718,9 +614,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -736,9 +630,7 @@
                 Februari
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -747,9 +639,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -758,9 +648,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -769,9 +657,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -787,9 +673,7 @@
                 Maret
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -798,9 +682,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -809,9 +691,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -820,9 +700,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -838,9 +716,7 @@
                 April
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -849,9 +725,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -860,9 +734,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -871,9 +743,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -887,9 +757,7 @@
             <div>
               <dt class="text-base font-semibold leading-7 text-white">Mei</dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -898,9 +766,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -909,9 +775,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -920,9 +784,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -936,9 +798,7 @@
             <div>
               <dt class="text-base font-semibold leading-7 text-white">Juni</dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -947,9 +807,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -958,9 +816,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -969,9 +825,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -985,9 +839,7 @@
             <div>
               <dt class="text-base font-semibold leading-7 text-white">Juli</dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -996,9 +848,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -1007,9 +857,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -1018,9 +866,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -1036,9 +882,7 @@
                 Agustus
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -1047,9 +891,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -1058,9 +900,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -1069,9 +909,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -1087,9 +925,7 @@
                 September
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -1098,9 +934,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -1109,9 +943,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -1120,9 +952,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -1138,9 +968,7 @@
                 Oktober
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -1149,9 +977,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -1160,9 +986,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -1171,9 +995,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -1189,9 +1011,7 @@
                 November
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -1200,9 +1020,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -1211,9 +1029,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -1222,9 +1038,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -1240,9 +1054,7 @@
                 Desember
               </dt>
               <div class="join join-vertical w-full">
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 1
@@ -1251,9 +1063,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 2
@@ -1262,9 +1072,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 3
@@ -1273,9 +1081,7 @@
                     <p>TBA</p>
                   </div>
                 </div>
-                <div
-                  class="collapse collapse-arrow join-item border border-base-300"
-                >
+                <div class="collapse collapse-arrow join-item border border-base-300">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title font-medium text-white">
                     Pekan 4
@@ -1288,7 +1094,9 @@
             </div>
           </dl>
         </div>
-      </div>
+      </div> -->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/data.js"></script>
   </body>
 </html>
