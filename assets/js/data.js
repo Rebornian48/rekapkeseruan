@@ -1,7 +1,7 @@
-new Chart(document.getElementById("myChart"), {
+new Chart(document.getElementById("2024sem1"), {
   type: "bar",
   data: {
-    labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    labels: ["January", "February", "March", "April", "May", "June"],
     datasets: [
       {
         label: "Pekan 1",
@@ -43,3 +43,50 @@ new Chart(document.getElementById("myChart"), {
     }
   },
 });
+
+new Chart(document.getElementById("2024sem2"), {
+  type: "bar",
+  data: {
+    labels: ["July", "August", "September", "October", "November", "December"],
+    datasets: [
+      {
+        label: "Pekan 1",
+        data: [13],
+      },
+      {
+        label: "Pekan 2",
+        data: [18],
+      },
+      {
+        label: "Pekan 3",
+        data: [15],
+      },
+      {
+        label: "Pekan 4",
+        data: [],
+      },
+      {
+        label: "Pekan 5",
+        data: [],
+      },
+    ],
+  },
+  options: {
+    indexAxis: 'y',
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+    bar: {
+      borderWidth: 4,
+    },
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+    }
+  },
+});
+
