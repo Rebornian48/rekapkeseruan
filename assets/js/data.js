@@ -55,7 +55,7 @@ new Chart(document.getElementById("2024sem2"), {
       },
       {
         label: "Pekan 2",
-        data: [18],
+        data: [18,23],
       },
       {
         label: "Pekan 3",
