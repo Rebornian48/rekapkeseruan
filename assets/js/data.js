@@ -1,4 +1,6 @@
-new Chart(document.getElementById("2024sem1"), {
+const ctx = document.getElementById("2024sem1");
+Chart.register(ChartDataLabels);
+new Chart(ctx, {
   type: "bar",
   data: {
     labels: ["January", "February", "March", "April", "May", "June"],
@@ -26,9 +28,36 @@ new Chart(document.getElementById("2024sem1"), {
     ],
   },
   options: {
-    indexAxis: 'y',
+    plugins: {
+      legend: {
+        position: "top",
+        labels: {
+          color: "white",
+        },
+      },
+      datalabels: {
+        anchor: "end", // Position of the labels (start, end, center, etc.)
+        align: "end", // Alignment of the labels (start, end, center, etc.)
+        color: "white", // Color of the labels
+        font: {
+          weight: "bold",
+        },
+        formatter: function (value, ctx) {
+          return value; // Display the actual data value
+        },
+      },
+    },
+    indexAxis: "y",
     scales: {
+      x: {
+        ticks: {
+          color: 'white',
+        }
+      },
       y: {
+        ticks: {
+          color: 'white',
+        },
         beginAtZero: true,
       },
     },
@@ -36,15 +65,12 @@ new Chart(document.getElementById("2024sem1"), {
       borderWidth: 4,
     },
     responsive: true,
-    plugins: {
-      legend: {
-        position: 'top',
-      },
-    }
   },
 });
 
-new Chart(document.getElementById("2024sem2"), {
+const ctx1 = document.getElementById("2024sem2");
+Chart.register(ChartDataLabels);
+new Chart(ctx1, {
   type: "bar",
   data: {
     labels: ["July", "August", "September", "October", "November", "December"],
@@ -72,9 +98,36 @@ new Chart(document.getElementById("2024sem2"), {
     ],
   },
   options: {
-    indexAxis: 'y',
+    plugins: {
+      legend: {
+        position: "top",
+        labels: {
+          color: "white",
+        },
+      },
+      datalabels: {
+        anchor: "end", // Position of the labels (start, end, center, etc.)
+        align: "end", // Alignment of the labels (start, end, center, etc.)
+        color: "white", // Color of the labels
+        font: {
+          weight: "bold",
+        },
+        formatter: function (value, ctx1) {
+          return value; // Display the actual data value
+        },
+      },
+    },
+    indexAxis: "y",
     scales: {
+      x: {
+        ticks: {
+          color: 'white',
+        }
+      },
       y: {
+        ticks: {
+          color: 'white',
+        },
         beginAtZero: true,
       },
     },
@@ -82,11 +135,6 @@ new Chart(document.getElementById("2024sem2"), {
       borderWidth: 4,
     },
     responsive: true,
-    plugins: {
-      legend: {
-        position: 'top',
-      },
-    }
   },
 });
 
