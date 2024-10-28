@@ -19,7 +19,7 @@ new Chart(ctx, {
       },
       {
         label: "Pekan 4",
-        data: [8, 8, 15, 18, 23, 10],
+        data: [8, 8, 15, 18, 23, 10, 15],
       },
       {
         label: "Pekan 5",
