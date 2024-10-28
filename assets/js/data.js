@@ -85,11 +85,11 @@ new Chart(ctx1, {
       },
       {
         label: "Pekan 3",
-        data: [15,15,23,15],
+        data: [15,15,23,16],
       },
       {
         label: "Pekan 4",
-        data: [14,15,20,15],
+        data: [14,15,20,16],
       },
       {
         label: "Pekan 5",
