@@ -77,7 +77,7 @@ new Chart(ctx1, {
     datasets: [
       {
         label: "Pekan 1",
-        data: [13,27,19,20],
+        data: [13,27,19,20,19],
       },
       {
         label: "Pekan 2",
